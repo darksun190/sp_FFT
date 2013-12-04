@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sp_FFT_forKorea", "sp_FFT_forKorea\sp_FFT_forKorea.csproj", "{5CE6694A-25E0-4993-ACE3-A16A066D9665}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPInterface", "..\..\..\..\..\Qt\Projects\sp_reader\sp_reader\SPInterface.csproj", "{70DA37EF-1B65-457F-A554-E6F943EA2BA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfSharp", "..\..\..\..\..\Qt\PDFsharp\code\PdfSharp\PdfSharp.csproj", "{5384CE57-1F94-4D22-860D-2E9C1AC12DDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFTFormLib", "FFTFormLib\FFTFormLib.csproj", "{EA6BEEEE-DFDF-4F72-8C25-DFFDF99E98DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CE6694A-25E0-4993-ACE3-A16A066D9665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CE6694A-25E0-4993-ACE3-A16A066D9665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CE6694A-25E0-4993-ACE3-A16A066D9665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CE6694A-25E0-4993-ACE3-A16A066D9665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70DA37EF-1B65-457F-A554-E6F943EA2BA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70DA37EF-1B65-457F-A554-E6F943EA2BA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70DA37EF-1B65-457F-A554-E6F943EA2BA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70DA37EF-1B65-457F-A554-E6F943EA2BA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5384CE57-1F94-4D22-860D-2E9C1AC12DDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5384CE57-1F94-4D22-860D-2E9C1AC12DDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5384CE57-1F94-4D22-860D-2E9C1AC12DDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5384CE57-1F94-4D22-860D-2E9C1AC12DDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA6BEEEE-DFDF-4F72-8C25-DFFDF99E98DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA6BEEEE-DFDF-4F72-8C25-DFFDF99E98DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA6BEEEE-DFDF-4F72-8C25-DFFDF99E98DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA6BEEEE-DFDF-4F72-8C25-DFFDF99E98DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

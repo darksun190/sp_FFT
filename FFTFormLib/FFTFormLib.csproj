@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EA6BEEEE-DFDF-4F72-8C25-DFFDF99E98DD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FFTFormLib</RootNamespace>
+    <AssemblyName>FFTFormLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="as2PI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="as2PI.Designer.cs">
+      <DependentUpon>as2PI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CuToOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CuToOne.Designer.cs">
+      <DependentUpon>CuToOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SC.cs" />
+    <Compile Include="SegAna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SegAna.Designer.cs">
+      <DependentUpon>SegAna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="template.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="template.Designer.cs">
+      <DependentUpon>template.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZP.Designer.cs">
+      <DependentUpon>ZP.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\Qt\PDFsharp\code\PdfSharp\PdfSharp.csproj">
+      <Project>{5384ce57-1f94-4d22-860d-2e9c1ac12ddf}</Project>
+      <Name>PdfSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\Qt\Projects\sp_reader\sp_reader\SPInterface.csproj">
+      <Project>{70da37ef-1b65-457f-a554-e6f943ea2ba4}</Project>
+      <Name>SPInterface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SegAna.resx">
+      <DependentUpon>SegAna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="template.resx">
+      <DependentUpon>template.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

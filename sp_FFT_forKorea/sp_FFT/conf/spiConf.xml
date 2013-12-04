@@ -1,0 +1,5 @@
+<ConfigFileTest>
+    <PathToSP>..\..\sp_FFT\tmp\</PathToSP>
+    <PathFromSP>..\..\sp_FFT\tmp\</PathFromSP>
+    <Timeout>1000</Timeout>
+</ConfigFileTest>
